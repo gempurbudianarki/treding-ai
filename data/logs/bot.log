@@ -1,0 +1,945 @@
+2025-12-04 00:52:49.707 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 00:52:49.708 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 00:52:49.709 | INFO     | core.feeder.mt5_feeder:initialize:26 - Inisialisasi MT5...
+2025-12-04 00:52:49.709 | ERROR    | core.feeder.mt5_feeder:initialize:28 - Gagal initialize MT5: (-2, 'Invalid "path" argument')
+2025-12-04 00:52:49.711 | ERROR    | __main__:main:53 - Gagal inisialisasi feeder. Keluar.
+2025-12-04 00:59:54.036 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 00:59:54.038 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 00:59:54.039 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 00:59:54.040 | INFO     | core.feeder.mt5_feeder:initialize:39 - MT5_PATH tidak di-set. Mencoba initialize MT5 tanpa path (default).
+2025-12-04 00:59:54.043 | ERROR    | core.feeder.mt5_feeder:initialize:43 - Gagal initialize MT5: (-10003, 'IPC initialize failed, MetaTrader 5 x64 not found')
+2025-12-04 00:59:54.044 | ERROR    | __main__:main:53 - Gagal inisialisasi feeder. Keluar.
+2025-12-04 01:45:51.341 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 01:45:51.341 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 01:45:51.341 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 01:45:51.341 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 01:45:51.353 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 01:45:51.357 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 01:45:51.357 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 01:45:51.357 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 01:45:51.357 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 01:45:51.357623 ===
+2025-12-04 01:45:54.880 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 01:45:54.880 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 01:45:54.880 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 01:46:54.884 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 01:46:54.884546 ===
+2025-12-04 01:46:54.889 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 01:46:54.889 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 01:46:54.889 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 01:47:54.892 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 01:47:54.892898 ===
+2025-12-04 01:47:54.918 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 01:47:54.918 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 01:47:54.918 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 01:48:54.923 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 01:48:54.923204 ===
+2025-12-04 01:48:54.946 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 01:48:54.947 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 01:48:54.947 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 01:49:54.950 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 01:49:54.950311 ===
+2025-12-04 01:49:54.990 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 01:49:54.990 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 01:49:54.990 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 01:50:54.991 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 01:50:54.991699 ===
+2025-12-04 01:50:55.000 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 01:50:55.001 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 01:50:55.001 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 01:51:55.002 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 01:51:55.002782 ===
+2025-12-04 01:51:55.012 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 01:51:55.012 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 01:51:55.013 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 01:52:55.014 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 01:52:55.014590 ===
+2025-12-04 01:52:55.020 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 01:52:55.020 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 01:52:55.020 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 01:53:55.033 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 01:53:55.033201 ===
+2025-12-04 01:53:55.121 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 01:53:55.123 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 01:53:55.123 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 01:54:55.126 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 01:54:55.126272 ===
+2025-12-04 01:54:55.138 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 01:54:55.140 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 01:54:55.140 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 01:55:55.141 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 01:55:55.141589 ===
+2025-12-04 01:55:55.226 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 01:55:55.226 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 01:55:55.231 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 01:56:11.148 | INFO     | __main__:main:138 - Bot dihentikan oleh user (CTRL+C).
+2025-12-04 01:56:11.149 | INFO     | __main__:main:141 - MT5 shutdown, bot selesai.
+2025-12-04 01:57:30.162 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 01:57:30.162 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 01:57:30.162 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 01:57:30.162 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 01:57:30.168 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 01:57:30.181 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 01:57:30.181 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 01:57:30.181 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 01:57:30.181 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 01:57:30.181717 ===
+2025-12-04 01:57:30.770 | ERROR    | core.feeder.news_feeder:_fetch_feed:41 - NewsFeeder: gagal fetch https://www.cnbc.com/id/100003114/device/rss/rss.html: 403 Client Error: Forbidden for url: https://www.cnbc.com/id/100003114/device/rss/rss.html
+2025-12-04 01:57:31.195 | ERROR    | core.feeder.news_feeder:_fetch_feed:41 - NewsFeeder: gagal fetch https://feeds.reuters.com/reuters/marketsNews: HTTPSConnectionPool(host='feeds.reuters.com', port=443): Max retries exceeded with url: /reuters/marketsNews (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B505FAEA80>: Failed to resolve 'feeds.reuters.com' ([Errno 11001] getaddrinfo failed)"))
+2025-12-04 01:57:31.195 | ERROR    | core.feeder.news_feeder:_fetch_feed:41 - NewsFeeder: gagal fetch https://feeds.reuters.com/reuters/businessNews: HTTPSConnectionPool(host='feeds.reuters.com', port=443): Max retries exceeded with url: /reuters/businessNews (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B505FAF140>: Failed to resolve 'feeds.reuters.com' ([Errno 11001] getaddrinfo failed)"))
+2025-12-04 01:57:31.195 | WARNING  | core.feeder.news_feeder:get_recent_headlines:82 - NewsFeeder: tidak ada item dari semua feed.
+2025-12-04 01:57:31.210 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 01:57:31.242 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 01:57:31.242 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 01:58:31.252 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 01:58:31.252113 ===
+2025-12-04 01:58:35.761 | ERROR    | core.feeder.news_feeder:_fetch_feed:41 - NewsFeeder: gagal fetch https://www.cnbc.com/id/100003114/device/rss/rss.html: 403 Client Error: Forbidden for url: https://www.cnbc.com/id/100003114/device/rss/rss.html
+2025-12-04 01:58:37.347 | ERROR    | core.feeder.news_feeder:_fetch_feed:41 - NewsFeeder: gagal fetch https://feeds.reuters.com/reuters/marketsNews: HTTPSConnectionPool(host='feeds.reuters.com', port=443): Max retries exceeded with url: /reuters/marketsNews (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B505FAF1A0>: Failed to resolve 'feeds.reuters.com' ([Errno 11001] getaddrinfo failed)"))
+2025-12-04 01:58:37.351 | ERROR    | core.feeder.news_feeder:_fetch_feed:41 - NewsFeeder: gagal fetch https://feeds.reuters.com/reuters/businessNews: HTTPSConnectionPool(host='feeds.reuters.com', port=443): Max retries exceeded with url: /reuters/businessNews (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B505E98200>: Failed to resolve 'feeds.reuters.com' ([Errno 11001] getaddrinfo failed)"))
+2025-12-04 01:58:37.351 | WARNING  | core.feeder.news_feeder:get_recent_headlines:82 - NewsFeeder: tidak ada item dari semua feed.
+2025-12-04 01:58:37.351 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 01:58:37.351 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 01:58:37.351 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 01:59:37.364 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 01:59:37.364041 ===
+2025-12-04 01:59:39.972 | ERROR    | core.feeder.news_feeder:_fetch_feed:41 - NewsFeeder: gagal fetch https://www.cnbc.com/id/100003114/device/rss/rss.html: 403 Client Error: Forbidden for url: https://www.cnbc.com/id/100003114/device/rss/rss.html
+2025-12-04 01:59:40.492 | ERROR    | core.feeder.news_feeder:_fetch_feed:41 - NewsFeeder: gagal fetch https://feeds.reuters.com/reuters/marketsNews: HTTPSConnectionPool(host='feeds.reuters.com', port=443): Max retries exceeded with url: /reuters/marketsNews (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B505FEC500>: Failed to resolve 'feeds.reuters.com' ([Errno 11001] getaddrinfo failed)"))
+2025-12-04 01:59:40.496 | ERROR    | core.feeder.news_feeder:_fetch_feed:41 - NewsFeeder: gagal fetch https://feeds.reuters.com/reuters/businessNews: HTTPSConnectionPool(host='feeds.reuters.com', port=443): Max retries exceeded with url: /reuters/businessNews (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B505FECE30>: Failed to resolve 'feeds.reuters.com' ([Errno 11001] getaddrinfo failed)"))
+2025-12-04 01:59:40.498 | WARNING  | core.feeder.news_feeder:get_recent_headlines:82 - NewsFeeder: tidak ada item dari semua feed.
+2025-12-04 01:59:40.501 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 01:59:40.501 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 01:59:40.502 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 02:00:40.503 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 02:00:40.503773 ===
+2025-12-04 02:00:43.441 | ERROR    | core.feeder.news_feeder:_fetch_feed:41 - NewsFeeder: gagal fetch https://www.cnbc.com/id/100003114/device/rss/rss.html: 403 Client Error: Forbidden for url: https://www.cnbc.com/id/100003114/device/rss/rss.html
+2025-12-04 02:00:43.860 | ERROR    | core.feeder.news_feeder:_fetch_feed:41 - NewsFeeder: gagal fetch https://feeds.reuters.com/reuters/marketsNews: HTTPSConnectionPool(host='feeds.reuters.com', port=443): Max retries exceeded with url: /reuters/marketsNews (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B505FEDBB0>: Failed to resolve 'feeds.reuters.com' ([Errno 11001] getaddrinfo failed)"))
+2025-12-04 02:00:43.886 | ERROR    | core.feeder.news_feeder:_fetch_feed:41 - NewsFeeder: gagal fetch https://feeds.reuters.com/reuters/businessNews: HTTPSConnectionPool(host='feeds.reuters.com', port=443): Max retries exceeded with url: /reuters/businessNews (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B505FAF9E0>: Failed to resolve 'feeds.reuters.com' ([Errno 11001] getaddrinfo failed)"))
+2025-12-04 02:00:43.890 | WARNING  | core.feeder.news_feeder:get_recent_headlines:82 - NewsFeeder: tidak ada item dari semua feed.
+2025-12-04 02:00:43.965 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 02:00:43.993 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 02:00:43.997 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 02:01:14.417 | INFO     | __main__:main:138 - Bot dihentikan oleh user (CTRL+C).
+2025-12-04 02:01:14.419 | INFO     | __main__:main:141 - MT5 shutdown, bot selesai.
+2025-12-04 02:01:18.855 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 02:01:18.855 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 02:01:18.855 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 02:01:18.855 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 02:01:18.863 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 02:01:18.863 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 02:01:18.863 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 02:01:18.863 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 02:01:18.863 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 02:01:18.863818 ===
+2025-12-04 02:01:31.939 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 02:01:31.939 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=90m)
+2025-12-04 02:01:32.558 | ERROR    | ai_api.gemini_client:analyze_text:45 - Error calling Gemini API: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-12-04 02:01:32.558 | INFO     | core.brains.sentiment_brain:analyze:77 - SentimentBrain: sentiment=neutral, confidence=0.4, headlines_count=6
+2025-12-04 02:01:32.568 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 02:01:32.568 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 02:01:32.568 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 02:02:32.570 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 02:02:32.570288 ===
+2025-12-04 02:02:37.702 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 02:02:37.705 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=90m)
+2025-12-04 02:02:37.834 | ERROR    | ai_api.gemini_client:analyze_text:45 - Error calling Gemini API: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-12-04 02:02:37.835 | INFO     | core.brains.sentiment_brain:analyze:77 - SentimentBrain: sentiment=neutral, confidence=0.4, headlines_count=6
+2025-12-04 02:02:37.838 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 02:02:37.839 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 02:02:37.840 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 02:03:37.841 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 02:03:37.841448 ===
+2025-12-04 02:03:43.815 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 02:03:43.816 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=90m)
+2025-12-04 02:03:43.893 | ERROR    | ai_api.gemini_client:analyze_text:45 - Error calling Gemini API: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-12-04 02:03:43.894 | INFO     | core.brains.sentiment_brain:analyze:77 - SentimentBrain: sentiment=neutral, confidence=0.4, headlines_count=6
+2025-12-04 02:03:43.896 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 02:03:43.898 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 02:03:43.898 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 02:04:41.796 | INFO     | __main__:main:138 - Bot dihentikan oleh user (CTRL+C).
+2025-12-04 02:04:41.796 | INFO     | __main__:main:141 - MT5 shutdown, bot selesai.
+2025-12-04 02:04:47.872 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 02:04:47.872 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 02:04:47.872 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 02:04:47.872 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 02:04:47.889 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 02:04:47.891 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 02:04:47.891 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 02:04:47.891 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 02:04:47.893 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 02:04:47.893043 ===
+2025-12-04 02:04:55.182 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 02:04:55.183 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=90m)
+2025-12-04 02:04:55.327 | ERROR    | ai_api.gemini_client:analyze_text:23 - Error calling Gemini API: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-12-04 02:04:55.327 | INFO     | core.brains.sentiment_brain:analyze:77 - SentimentBrain: sentiment=neutral, confidence=0.4, headlines_count=6
+2025-12-04 02:04:55.327 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 02:04:55.327 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 02:04:55.327 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 02:05:55.338 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 02:05:55.338107 ===
+2025-12-04 02:06:04.187 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 02:06:04.187 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=90m)
+2025-12-04 02:06:04.340 | ERROR    | ai_api.gemini_client:analyze_text:23 - Error calling Gemini API: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-12-04 02:06:04.341 | INFO     | core.brains.sentiment_brain:analyze:77 - SentimentBrain: sentiment=neutral, confidence=0.4, headlines_count=6
+2025-12-04 02:06:04.343 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 02:06:04.343 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 02:06:04.344 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 02:06:07.621 | INFO     | __main__:main:138 - Bot dihentikan oleh user (CTRL+C).
+2025-12-04 02:06:07.621 | INFO     | __main__:main:141 - MT5 shutdown, bot selesai.
+2025-12-04 02:07:51.436 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 02:07:51.436 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 02:07:51.451 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 02:07:51.452 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 02:07:51.452 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 02:07:51.467 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 02:07:51.467 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 02:07:51.467 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 02:07:51.467 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 02:07:51.467849 ===
+2025-12-04 02:08:05.734 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Read timed out. (read timeout=10)
+2025-12-04 02:08:05.737 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=90m)
+2025-12-04 02:08:06.066 | ERROR    | ai_api.gemini_client:analyze_text:26 - Error calling Gemini API: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-12-04 02:08:06.067 | INFO     | core.brains.sentiment_brain:analyze:77 - SentimentBrain: sentiment=neutral, confidence=0.4, headlines_count=6
+2025-12-04 02:08:06.069 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 02:08:06.070 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 02:08:06.070 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 02:09:06.071 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 02:09:06.071834 ===
+2025-12-04 02:09:12.711 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 02:09:12.712 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=90m)
+2025-12-04 02:09:12.889 | ERROR    | ai_api.gemini_client:analyze_text:26 - Error calling Gemini API: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-12-04 02:09:12.889 | INFO     | core.brains.sentiment_brain:analyze:77 - SentimentBrain: sentiment=neutral, confidence=0.4, headlines_count=6
+2025-12-04 02:09:12.889 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 02:09:12.889 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 02:09:12.889 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 02:09:28.451 | INFO     | __main__:main:138 - Bot dihentikan oleh user (CTRL+C).
+2025-12-04 02:09:28.451 | INFO     | __main__:main:141 - MT5 shutdown, bot selesai.
+2025-12-04 02:32:51.930 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 02:32:51.934 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 02:32:51.935 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 02:32:51.935 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 02:32:51.950 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 02:32:52.001 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 02:32:52.004 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 02:32:52.006 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 02:32:52.007 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 02:32:52.007000 ===
+2025-12-04 02:33:06.147 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000260CB918AA0>, 'Connection to www.fxstreet.com timed out. (connect timeout=10)'))
+2025-12-04 02:33:06.148 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=90m)
+2025-12-04 02:33:06.700 | ERROR    | ai_api.gemini_client:analyze_text:26 - Error calling Gemini API: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-12-04 02:33:06.700 | INFO     | core.brains.sentiment_brain:analyze:77 - SentimentBrain: sentiment=neutral, confidence=0.4, headlines_count=6
+2025-12-04 02:33:06.702 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 02:33:06.702 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 02:33:06.703 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 02:33:15.418 | INFO     | __main__:main:138 - Bot dihentikan oleh user (CTRL+C).
+2025-12-04 02:33:15.420 | INFO     | __main__:main:141 - MT5 shutdown, bot selesai.
+2025-12-04 02:59:14.483 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 02:59:14.484 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 02:59:14.484 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 02:59:14.485 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 02:59:14.498 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 02:59:14.529 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 02:59:14.530 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 02:59:14.532 | INFO     | ai_api.gemini_client:__init__:15 - GeminiClient initialized (REST mode) with model: gemini-1.5-flash-latest
+2025-12-04 02:59:14.533 | INFO     | core.brains.sentiment_brain:__init__:22 - SentimentBrain initialized
+2025-12-04 02:59:14.534 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 02:59:14.534 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 02:59:14.534385 ===
+2025-12-04 02:59:15.227 | ERROR    | ai_api.gemini_client:analyze_text:36 - Gemini REST API Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 02:59:15.229 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 02:59:15.231 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 02:59:15.232 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 02:59:15.232 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:00:15.235 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:00:15.234323 ===
+2025-12-04 03:00:17.507 | ERROR    | ai_api.gemini_client:analyze_text:36 - Gemini REST API Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:00:17.524 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:00:17.540 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:00:17.544 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:00:17.550 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:01:17.560 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:01:17.560762 ===
+2025-12-04 03:01:18.431 | ERROR    | ai_api.gemini_client:analyze_text:36 - Gemini REST API Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:01:18.433 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:01:18.438 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:01:18.438 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:01:18.439 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:02:18.440 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:02:18.440997 ===
+2025-12-04 03:02:19.393 | ERROR    | ai_api.gemini_client:analyze_text:36 - Gemini REST API Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:02:19.398 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:02:19.400 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:02:19.401 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:02:19.401 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:03:14.357 | INFO     | __main__:main:138 - Bot dihentikan oleh user (CTRL+C).
+2025-12-04 03:03:14.358 | INFO     | __main__:main:141 - MT5 shutdown, bot selesai.
+2025-12-04 03:03:17.898 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:03:17.899 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:03:17.900 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:03:17.900 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:03:17.912 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:03:17.939 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:03:17.940 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:03:17.941 | INFO     | ai_api.gemini_client:__init__:15 - GeminiClient initialized (REST mode) with model: gemini-1.5-flash-latest
+2025-12-04 03:03:17.941 | INFO     | core.brains.sentiment_brain:__init__:22 - SentimentBrain initialized
+2025-12-04 03:03:17.942 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 03:03:17.942 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:03:17.942326 ===
+2025-12-04 03:03:18.497 | ERROR    | ai_api.gemini_client:analyze_text:36 - Gemini REST API Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:03:18.499 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:03:18.501 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:03:18.502 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:03:18.502 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:04:18.503 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:04:18.503326 ===
+2025-12-04 03:04:19.577 | ERROR    | ai_api.gemini_client:analyze_text:36 - Gemini REST API Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:04:19.586 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:04:19.602 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:04:19.604 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:04:19.608 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:04:54.986 | INFO     | __main__:main:138 - Bot dihentikan oleh user (CTRL+C).
+2025-12-04 03:04:54.987 | INFO     | __main__:main:141 - MT5 shutdown, bot selesai.
+2025-12-04 03:04:57.907 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:04:57.907 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:04:57.909 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:04:57.909 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:04:57.912 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:04:57.914 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:04:57.914 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:04:57.914 | INFO     | ai_api.gemini_client:__init__:16 - GeminiClient initialized (REST mode) with model: gemini-1.5-flash-latest
+2025-12-04 03:04:57.915 | INFO     | core.brains.sentiment_brain:__init__:22 - SentimentBrain initialized
+2025-12-04 03:04:57.915 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 03:04:57.915 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:04:57.915173 ===
+2025-12-04 03:04:58.295 | ERROR    | ai_api.gemini_client:analyze_text:37 - Gemini REST API Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:04:58.297 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:04:58.298 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:04:58.298 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:04:58.298 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:05:58.299 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:05:58.299394 ===
+2025-12-04 03:05:59.178 | ERROR    | ai_api.gemini_client:analyze_text:37 - Gemini REST API Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:05:59.182 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:05:59.184 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:05:59.185 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:05:59.185 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:06:04.480 | INFO     | __main__:main:138 - Bot dihentikan oleh user (CTRL+C).
+2025-12-04 03:06:04.480 | INFO     | __main__:main:141 - MT5 shutdown, bot selesai.
+2025-12-04 03:06:06.772 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:06:06.772 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:06:06.772 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:06:06.772 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:06:06.776 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:06:06.777 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:06:06.777 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:06:06.777 | INFO     | ai_api.gemini_client:__init__:17 - GeminiClient initialized (REST mode) with model: gemini-1.5-flash
+2025-12-04 03:06:06.778 | INFO     | core.brains.sentiment_brain:__init__:22 - SentimentBrain initialized
+2025-12-04 03:06:06.778 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 03:06:06.778 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:06:06.778854 ===
+2025-12-04 03:06:07.207 | ERROR    | ai_api.gemini_client:analyze_text:38 - Gemini REST API Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:06:07.212 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:06:07.216 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:06:07.216 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:06:07.216 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:07:07.217 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:07:07.217365 ===
+2025-12-04 03:07:09.712 | ERROR    | ai_api.gemini_client:analyze_text:38 - Gemini REST API Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:07:09.717 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:07:09.724 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:07:09.730 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:07:09.732 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:08:09.734 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:08:09.734168 ===
+2025-12-04 03:08:10.642 | ERROR    | ai_api.gemini_client:analyze_text:38 - Gemini REST API Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:08:10.647 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:08:10.649 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:08:10.649 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:08:10.650 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:09:10.650 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:09:10.650845 ===
+2025-12-04 03:09:11.369 | ERROR    | ai_api.gemini_client:analyze_text:38 - Gemini REST API Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:09:11.371 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:09:11.375 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:09:11.375 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:09:11.376 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:09:16.763 | INFO     | __main__:main:138 - Bot dihentikan oleh user (CTRL+C).
+2025-12-04 03:09:16.764 | INFO     | __main__:main:141 - MT5 shutdown, bot selesai.
+2025-12-04 03:10:15.065 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:10:15.066 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:10:15.067 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:10:15.067 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:10:15.072 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:10:15.093 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:10:15.094 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:11:52.492 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:11:52.492 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:11:52.492 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:11:52.492 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:11:52.495 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:11:52.496 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:11:52.497 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:11:52.757 | INFO     | ai_api.gemini_client:__init__:29 - GeminiClient (OpenAI-mode) initialized with model: gpt-4.1-mini
+2025-12-04 03:11:52.757 | INFO     | core.brains.sentiment_brain:__init__:22 - SentimentBrain initialized
+2025-12-04 03:11:52.757 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 03:11:52.757 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:11:52.757193 ===
+2025-12-04 03:11:54.062 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:11:54.064 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:11:54.064 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:11:54.065 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:12:54.066 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:12:54.066457 ===
+2025-12-04 03:12:55.517 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:12:55.519 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:12:55.519 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:12:55.520 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:13:55.522 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:13:55.522042 ===
+2025-12-04 03:13:57.421 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:13:57.425 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:13:57.426 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:13:57.429 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:14:57.430 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:14:57.430159 ===
+2025-12-04 03:14:58.839 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:14:58.842 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.2)
+2025-12-04 03:14:58.844 | INFO     | __main__:main:93 - HOLD: reason=low_technical_confidence
+2025-12-04 03:14:58.845 | INFO     | __main__:main:134 - === LOOP SELESAI ===
+2025-12-04 03:15:13.547 | INFO     | __main__:main:138 - Bot dihentikan oleh user (CTRL+C).
+2025-12-04 03:15:13.548 | INFO     | __main__:main:141 - MT5 shutdown, bot selesai.
+2025-12-04 03:15:17.898 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:15:17.900 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:15:17.900 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:15:17.900 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:15:17.905 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:15:17.924 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:15:17.925 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:15:17.925 | INFO     | core.brains.technical_brain:__init__:8 - TechnicalBrain loaded with EMA, RSI, MACD, STOCH, ATR
+2025-12-04 03:15:18.178 | INFO     | ai_api.gemini_client:__init__:29 - GeminiClient (OpenAI-mode) initialized with model: gpt-4.1-mini
+2025-12-04 03:15:18.179 | INFO     | core.brains.sentiment_brain:__init__:22 - SentimentBrain initialized
+2025-12-04 03:15:18.179 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 03:15:18.179 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:15:18.179533 ===
+2025-12-04 03:15:18.967 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:15:18.972 | INFO     | __main__:main:141 - MT5 shutdown, bot selesai.
+2025-12-04 03:15:31.200 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:15:31.200 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:15:31.200 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:15:31.200 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:15:31.205 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:15:31.205 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:15:31.205 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:15:31.205 | INFO     | core.brains.technical_brain:__init__:8 - TechnicalBrain loaded with EMA, RSI, MACD, STOCH, ATR
+2025-12-04 03:15:31.435 | INFO     | ai_api.gemini_client:__init__:29 - GeminiClient (OpenAI-mode) initialized with model: gpt-4.1-mini
+2025-12-04 03:15:31.435 | INFO     | core.brains.sentiment_brain:__init__:22 - SentimentBrain initialized
+2025-12-04 03:15:31.436 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 03:15:31.436 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:15:31.436526 ===
+2025-12-04 03:15:36.892 | INFO     | core.brains.sentiment_brain:analyze:79 - SentimentBrain: sentiment=neutral, headlines=6
+2025-12-04 03:15:36.895 | INFO     | __main__:main:141 - MT5 shutdown, bot selesai.
+2025-12-04 03:16:54.296 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:16:54.298 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:16:54.299 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:16:54.300 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:16:54.303 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:16:54.303 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:16:54.303 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:16:54.305 | INFO     | core.brains.technical_brain:__init__:8 - TechnicalBrain loaded with EMA, RSI, MACD, STOCH, ATR
+2025-12-04 03:16:59.993 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:16:59.994 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:16:59.995 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:16:59.996 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:16:59.999 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:17:00.001 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:17:00.002 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:17:00.002 | INFO     | core.brains.technical_brain:__init__:8 - TechnicalBrain loaded with EMA, RSI, MACD, STOCH, ATR
+2025-12-04 03:18:00.804 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:18:00.805 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:18:00.806 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:18:00.807 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:18:00.812 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:18:00.818 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:18:00.819 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:18:00.819 | INFO     | core.brains.technical_brain:__init__:8 - TechnicalBrain loaded with EMA, RSI, MACD, STOCH, ATR
+2025-12-04 03:18:01.088 | INFO     | ai_api.gemini_client:__init__:32 - GeminiClient loaded (REST + OpenAI fallback). Model: gpt-4.1-mini
+2025-12-04 03:18:01.089 | INFO     | core.brains.sentiment_brain:__init__:11 - SentimentBrain v2 initialized
+2025-12-04 03:18:01.089 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 03:18:01.089 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:18:01.089882 ===
+2025-12-04 03:18:01.121 | INFO     | __main__:main:141 - MT5 shutdown, bot selesai.
+2025-12-04 03:21:13.091 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:21:13.093 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:21:13.093 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:21:13.094 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:21:13.098 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:21:13.099 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:21:13.100 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:21:13.100 | INFO     | core.brains.technical_brain:__init__:8 - TechnicalBrain loaded with EMA, RSI, MACD, STOCH, ATR
+2025-12-04 03:21:13.376 | INFO     | ai_api.gemini_client:__init__:32 - GeminiClient loaded (REST + OpenAI fallback). Model: gpt-4.1-mini
+2025-12-04 03:21:13.376 | INFO     | core.brains.sentiment_brain:__init__:10 - SentimentBrain v2 initialized
+2025-12-04 03:21:13.376 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 03:21:13.376 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:21:13.376947 ===
+2025-12-04 03:21:13.408 | INFO     | __main__:main:142 - MT5 shutdown, bot selesai.
+2025-12-04 03:21:28.013 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:21:28.013 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:21:28.014 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:21:28.014 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:21:28.017 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:21:28.019 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:21:28.019 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:21:28.019 | INFO     | core.brains.technical_brain:__init__:8 - TechnicalBrain loaded with EMA, RSI, MACD, STOCH, ATR
+2025-12-04 03:21:28.231 | INFO     | ai_api.gemini_client:__init__:32 - GeminiClient loaded (REST + OpenAI fallback). Model: gpt-4.1-mini
+2025-12-04 03:21:28.232 | INFO     | core.brains.sentiment_brain:__init__:10 - SentimentBrain v2 initialized
+2025-12-04 03:21:28.232 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 03:21:28.233 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:21:28.233620 ===
+2025-12-04 03:21:28.236 | INFO     | __main__:main:142 - MT5 shutdown, bot selesai.
+2025-12-04 03:28:09.439 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:28:09.443 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:28:09.444 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:28:09.444 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:28:09.453 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:28:09.475 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:28:09.476 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:28:09.476 | INFO     | core.brains.technical_brain:__init__:8 - TechnicalBrain loaded with EMA, RSI, MACD, STOCH, ATR
+2025-12-04 03:29:25.382 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:29:25.382 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:29:25.382 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:29:25.382 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:29:25.388 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:29:25.388 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:29:25.388 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:29:25.388 | INFO     | core.brains.technical_brain:__init__:8 - TechnicalBrain loaded with EMA, RSI, MACD, STOCH, ATR
+2025-12-04 03:31:46.703 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:31:46.703 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:31:46.704 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:31:46.704 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:31:46.709 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:31:46.710 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:31:46.710 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:31:46.710 | INFO     | core.brains.technical_brain:__init__:8 - TechnicalBrain loaded with EMA, RSI, MACD, STOCH, ATR
+2025-12-04 03:31:46.975 | INFO     | ai_api.gemini_client:__init__:33 - GeminiClient loaded (REST + OpenAI fallback). Model fallback: gpt-4.1-mini
+2025-12-04 03:31:46.975 | INFO     | core.brains.sentiment_brain:__init__:17 - SentimentBrain v2 initialized
+2025-12-04 03:31:46.976 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 03:31:46.976 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:31:46.976922 ===
+2025-12-04 03:31:52.074 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:31:52.075 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:31:52.520 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:31:52.521 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:31:57.905 | INFO     | __main__:main:142 - MT5 shutdown, bot selesai.
+2025-12-04 03:35:34.340 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:35:34.341 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:35:34.341 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:35:34.342 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:35:34.348 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:35:34.349 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:35:34.349 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:35:34.349 | INFO     | core.brains.technical_brain:__init__:8 - TechnicalBrain loaded with EMA, RSI, MACD, STOCH, ATR
+2025-12-04 03:35:34.604 | INFO     | ai_api.gemini_client:__init__:33 - GeminiClient loaded (REST + OpenAI fallback). Model fallback: gpt-4.1-mini
+2025-12-04 03:35:34.605 | INFO     | core.brains.sentiment_brain:__init__:17 - SentimentBrain v2 initialized
+2025-12-04 03:35:34.605 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=True, TIMEFRAME=15m
+2025-12-04 03:35:34.605 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:35:34.605253 ===
+2025-12-04 03:35:39.676 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:35:39.677 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:35:40.049 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:35:40.051 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:35:44.787 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:35:44.789 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:35:44.789 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:36:44.790 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:36:44.790567 ===
+2025-12-04 03:36:50.798 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:36:50.799 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:36:51.748 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:36:51.748 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:36:56.551 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:36:56.552 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:36:56.553 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:37:56.555 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:37:56.555259 ===
+2025-12-04 03:38:04.474 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:38:04.474 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:38:05.199 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:38:05.200 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:38:12.617 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.25)
+2025-12-04 03:38:12.617 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:38:12.618 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:39:12.619 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:39:12.619352 ===
+2025-12-04 03:39:18.968 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:39:18.970 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:39:19.800 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:39:19.804 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:39:23.615 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:39:23.616 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:39:23.616 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:40:23.617 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:40:23.617502 ===
+2025-12-04 03:40:27.523 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:40:27.524 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:40:28.005 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:40:28.007 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:40:31.870 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:40:31.871 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:40:31.871 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:41:31.873 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:41:31.873380 ===
+2025-12-04 03:41:38.504 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:41:38.505 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:41:39.418 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:41:39.420 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:41:43.824 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:41:43.825 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:41:43.825 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:42:43.827 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:42:43.827166 ===
+2025-12-04 03:42:51.941 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:42:51.941 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:42:53.542 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:42:53.542 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:42:57.107 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.25)
+2025-12-04 03:42:57.107 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:42:57.123 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:42:59.920 | INFO     | __main__:main:139 - Bot dihentikan oleh user (CTRL+C).
+2025-12-04 03:42:59.920 | INFO     | __main__:main:142 - MT5 shutdown, bot selesai.
+2025-12-04 03:43:04.259 | INFO     | __main__:setup_logger:21 - Logger initialized. Log file: data/logs/bot.log
+2025-12-04 03:43:04.259 | INFO     | __main__:main:49 - Starting AI Trading Bot for symbol XAUUSD
+2025-12-04 03:43:04.259 | INFO     | core.feeder.mt5_feeder:initialize:32 - Inisialisasi MT5...
+2025-12-04 03:43:04.259 | INFO     | core.feeder.mt5_feeder:initialize:36 - Mencoba initialize MT5 dengan path: C:\Program Files\MetaTrader 5\terminal64.exe
+2025-12-04 03:43:04.272 | INFO     | core.feeder.mt5_feeder:initialize:51 - Mencoba login ke MT5: login=5043244800, server=MetaQuotes-Demo
+2025-12-04 03:43:04.294 | INFO     | core.feeder.mt5_feeder:initialize:64 - Berhasil login ke MT5.
+2025-12-04 03:43:04.296 | INFO     | core.feeder.mt5_feeder:initialize:76 - MT5Feeder siap. Symbol: XAUUSD, TF: 15m
+2025-12-04 03:43:04.296 | INFO     | core.brains.technical_brain:__init__:8 - TechnicalBrain loaded with EMA, RSI, MACD, STOCH, ATR
+2025-12-04 03:43:04.514 | INFO     | ai_api.gemini_client:__init__:33 - GeminiClient loaded (REST + OpenAI fallback). Model fallback: gpt-4.1-mini
+2025-12-04 03:43:04.514 | INFO     | core.brains.sentiment_brain:__init__:17 - SentimentBrain v2 initialized
+2025-12-04 03:43:04.514 | INFO     | __main__:main:63 - Loop dimulai. DRY_RUN=False, TIMEFRAME=15m
+2025-12-04 03:43:04.514 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:43:04.514494 ===
+2025-12-04 03:43:08.718 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:43:08.718 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:43:09.500 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:43:09.500 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:43:14.909 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:43:14.909 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:43:14.911 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:44:14.912 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:44:14.912453 ===
+2025-12-04 03:44:19.960 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:44:19.962 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:44:20.875 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:44:20.875 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:44:25.766 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:44:25.766 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:44:25.766 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:45:25.775 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:45:25.775550 ===
+2025-12-04 03:45:32.788 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:45:32.800 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:45:33.600 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:45:33.601 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:45:38.831 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:45:38.831 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:45:38.832 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:46:38.834 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:46:38.834074 ===
+2025-12-04 03:46:44.678 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:46:44.678 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:46:45.449 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:46:45.451 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:46:53.254 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:46:53.254 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:46:53.254 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:47:53.266 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:47:53.266389 ===
+2025-12-04 03:47:58.154 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:47:58.154 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:47:58.946 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:47:58.948 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:48:04.400 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:48:04.400 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:48:04.400 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:49:04.414 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:49:04.414342 ===
+2025-12-04 03:49:10.358 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:49:10.358 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:49:11.295 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:49:11.297 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:49:14.721 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:49:14.721 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:49:14.721 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:50:14.723 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:50:14.723284 ===
+2025-12-04 03:50:22.842 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:50:22.842 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:50:24.357 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:50:24.357 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:50:30.522 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:50:30.522 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:50:30.522 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:51:30.523 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:51:30.523804 ===
+2025-12-04 03:51:36.203 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:51:36.204 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:51:36.961 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:51:36.963 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:51:40.950 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:51:40.950 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:51:40.950 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:52:40.952 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:52:40.952567 ===
+2025-12-04 03:52:45.600 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:52:45.600 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:52:46.426 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:52:46.428 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:52:50.310 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:52:50.310 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:52:50.310 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:53:50.318 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:53:50.318499 ===
+2025-12-04 03:53:56.472 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:53:56.472 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:53:57.243 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:53:57.245 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:54:02.340 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:54:02.340 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:54:02.341 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:55:02.341 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:55:02.341842 ===
+2025-12-04 03:55:07.897 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:55:07.899 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:55:09.132 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:55:09.135 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:55:13.449 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:55:13.449 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:55:13.450 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:56:13.451 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:56:13.451201 ===
+2025-12-04 03:56:18.489 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:56:18.490 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:56:19.378 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:56:19.382 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:56:23.530 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:56:23.530 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:56:23.530 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:57:23.532 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:57:23.532437 ===
+2025-12-04 03:57:28.576 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:57:28.576 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:57:29.353 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:57:29.403 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:57:33.182 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:57:33.182 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:57:33.183 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:58:33.184 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:58:33.184134 ===
+2025-12-04 03:58:37.023 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:58:37.024 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 6 headline (limit=6, max_age=60m)
+2025-12-04 03:58:37.417 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:58:37.418 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:58:42.222 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:58:42.222 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:58:42.223 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 03:59:42.224 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 03:59:42.224211 ===
+2025-12-04 03:59:51.618 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 03:59:51.619 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 5 headline (limit=6, max_age=60m)
+2025-12-04 03:59:52.469 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 03:59:52.471 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 03:59:56.981 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 03:59:56.981 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
+2025-12-04 03:59:56.981 | INFO     | __main__:main:135 - === LOOP SELESAI ===
+2025-12-04 04:00:56.983 | INFO     | __main__:main:68 - === LOOP MULAI: 2025-12-04 04:00:56.983316 ===
+2025-12-04 04:01:03.853 | WARNING  | core.feeder.news_feeder:_fetch_feed:51 - NewsFeeder: gagal fetch https://www.fxstreet.com/rss/news: HTTPSConnectionPool(host='www.fxstreet.com', port=443): Max retries exceeded with url: /rss/news (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.fxstreet.com'. (_ssl.c:1010)")))
+2025-12-04 04:01:03.854 | INFO     | core.feeder.news_feeder:get_recent_headlines:133 - NewsFeeder: dapat 5 headline (limit=6, max_age=60m)
+2025-12-04 04:01:04.893 | WARNING  | ai_api.gemini_client:_call_gemini_rest:60 - [Gemini REST] Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-12-04 04:01:04.897 | WARNING  | ai_api.gemini_client:analyze_text:101 - Fallback to OpenAI GPT...
+2025-12-04 04:01:08.730 | INFO     | core.orchestrator.orchestrator:decide:43 - Orchestrator: HOLD karena technical confidence rendah (0.0)
+2025-12-04 04:01:08.731 | INFO     | __main__:main:94 - HOLD: reason=low_technical_confidence
