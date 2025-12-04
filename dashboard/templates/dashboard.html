@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>AI Trading Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('dashboard.static', filename='css/dashboard.css') }}">
+</head>
+<body>
+<div class="app-root">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-circle">AI</div>
+            <div class="logo-text">
+                <div class="logo-title">Trading Bot</div>
+                <div class="logo-subtitle">XAUUSD Quant</div>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <button class="nav-item active" data-view="overview">
+                <span>📊 Overview</span>
+            </button>
+            <button class="nav-item" data-view="chart">
+                <span>📈 Live Chart</span>
+            </button>
+            <button class="nav-item" data-view="signals">
+                <span>🔔 Signals History</span>
+            </button>
+            <button class="nav-item" data-view="trades">
+                <span>📑 Open & Closed Trades</span>
+            </button>
+            <button class="nav-item" data-view="risk">
+                <span>🛡 Risk & Mode</span>
+            </button>
+            <button class="nav-item" data-view="logs">
+                <span>📰 News / Logs</span>
+            </button>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="small-label">Bot control</div>
+            <div class="toggle-row">
+                <span>Trading</span>
+                <label class="switch">
+                    <input type="checkbox" id="toggle-trading" />
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="small-label" style="margin-top:10px;">Mode</div>
+            <select id="mode-select" class="mode-select">
+                <option value="SAFE">SAFE</option>
+                <option value="BALANCED">BALANCED</option>
+                <option value="AGGRESSIVE">AGGRESSIVE</option>
+                <option value="SCALPING_M5">SCALPING M5</option>
+            </select>
+
+            <div class="sidebar-footer-meta">
+                <div class="sidebar-meta-line">
+                    <span class="dot online"></span> Dashboard online
+                </div>
+                <div class="sidebar-meta-line" id="sidebar-updated">
+                    Updated: -
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <!-- TOP BAR -->
+        <header class="topbar">
+            <div>
+                <h1>AI Trading Dashboard</h1>
+                <p class="topbar-subtitle">
+                    Pantau bot MT5 lo (XAUUSD) + news + signal dalam satu layar.
+                </p>
+            </div>
+            <div class="topbar-right">
+                {% if status %}
+                    <span class="badge">
+                        TF: {{ status.timeframe_minutes }}m · Symbol: {{ status.symbol }}
+                    </span>
+                {% endif %}
+                <span class="badge badge-pill" id="badge-mode">MODE: -</span>
+                <span class="badge" id="badge-dryrun">DRY RUN: -</span>
+            </div>
+        </header>
+
+        <!-- VIEWS WRAPPER -->
+        <section class="view active" id="view-overview">
+            {% set s = status or {} %}
+            {% set c = control or {} %}
+            <div class="grid grid-3">
+                <!-- Account -->
+                <div class="card">
+                    <div class="card-label">Account</div>
+                    <div class="card-value">{{ s.symbol or "-" }}</div>
+                    <div class="muted">
+                        TF: {{ s.timeframe_minutes or 0 }}m<br>
+                        Dry run: {{ "ON" if s.dry_run else "OFF" }}<br>
+                        Bot trading: {{ "ON" if c.trading_enabled else "OFF" }}
+                    </div>
+                </div>
+
+                <!-- Mode -->
+                <div class="card">
+                    <div class="card-label">Mode</div>
+                    {% set mode = (c.mode or s.mode or "SAFE")|upper %}
+                    <div class="mode-pill mode-{{ mode }}">{{ mode }}</div>
+                    <div class="muted">
+                        Tech threshold: (lihat orchestrator di core) <br>
+                        Sentiment: {% if s.sentiment and s.sentiment.sentiment %}{{ s.sentiment.sentiment|title }}{% else %}-{% endif %}
+                    </div>
+                </div>
+
+                <!-- Decision -->
+                <div class="card">
+                    <div class="card-label">Last Decision</div>
+                    {% set d = s.decision or {} %}
+                    {% set act = (d.action or "HOLD")|upper %}
+                    <div class="decision-pill decision-{{ act }}">
+                        {{ act }}
+                    </div>
+                    <div class="muted" style="margin-top:6px;">
+                        Reason: {{ d.reason or "-" }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-3" style="margin-top:18px;">
+                <!-- Technical -->
+                <div class="card">
+                    <div class="card-label">Technical Bias</div>
+                    {% set t = s.technical or {} %}
+                    <div class="card-value">{{ (t.direction or "neutral")|upper }}</div>
+                    <div class="muted">
+                        Confidence: {{ "%.2f"|format(t.confidence or 0) }}
+                    </div>
+                </div>
+
+                <!-- Sentiment -->
+                <div class="card">
+                    <div class="card-label">News Sentiment</div>
+                    {% set se = s.sentiment or {} %}
+                    {% set sd = se.sentiment or "neutral" %}
+                    <div class="sentiment-pill sentiment-{{ sd }}">
+                        {{ sd|title }}
+                    </div>
+                    <div class="muted">
+                        Confidence: {{ "%.2f"|format(se.confidence or 0) }}
+                    </div>
+                </div>
+
+                <!-- Last update -->
+                <div class="card">
+                    <div class="card-label">Last Loop</div>
+                    <div class="card-value" id="last-updated">{{ s.timestamp or "-" }}</div>
+                    <div class="muted">
+                        Refresh otomatis tiap 60 detik dari status.json
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profit overview + mini panels -->
+            <div class="grid grid-2" style="margin-top:18px;">
+                <div class="card">
+                    <div class="card-label">Profit Overview</div>
+                    <canvas id="daily-pnl-chart" height="120"></canvas>
+                    <div class="muted" style="margin-top:4px;">
+                        Sumber: data/history.json (daily_pnl & weekly_pnl).
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-label">Signals Snapshot</div>
+                    <div id="signals-snapshot" class="signals-list">
+                        <!-- filled by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: CHART -->
+        <section class="view" id="view-chart">
+            <div class="card full-card">
+                <div class="card-label">XAUUSD Live Chart (TradingView)</div>
+                <div class="tradingview-wrapper">
+                    <!-- TradingView Widget -->
+                    <div class="tradingview-widget-container">
+                        <div id="tradingview_chart"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                        <script type="text/javascript">
+                            new TradingView.widget({
+                                "width": "100%",
+                                "height": 520,
+                                "symbol": "OANDA:XAUUSD",
+                                "interval": "15",
+                                "timezone": "Etc/UTC",
+                                "theme": "dark",
+                                "style": "1",
+                                "locale": "en",
+                                "toolbar_bg": "#0b1220",
+                                "enable_publishing": false,
+                                "withdateranges": true,
+                                "range": "1D",
+                                "hide_side_toolbar": false,
+                                "allow_symbol_change": true,
+                                "container_id": "tradingview_chart"
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: SIGNALS HISTORY -->
+        <section class="view" id="view-signals">
+            <div class="card full-card">
+                <div class="card-label">Signals History</div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Symbol</th>
+                        <th>Action</th>
+                        <th>Reason</th>
+                    </tr>
+                    </thead>
+                    <tbody id="signals-table-body">
+                    <!-- filled by JS -->
+                    </tbody>
+                </table>
+                <div class="muted" style="margin-top:4px;">
+                    Isi dari history.json → signals[]. Nanti bisa diisi dari core.orchestrator setiap kali ada signal.
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: TRADES -->
+        <section class="view" id="view-trades">
+            <div class="card full-card">
+                <div class="card-label">Open & Closed Trades</div>
+                <p class="muted">
+                    Placeholder dulu: nanti bisa di-link ke file <code>data/trades.json</code> atau langsung baca dari MT5.
+                </p>
+                <div id="trades-placeholder" class="placeholder-box">
+                    Belum ada data trade yang disimpan.
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: RISK & MODE -->
+        <section class="view" id="view-risk">
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-label">Bot Mode</div>
+                    <p class="muted">
+                        Mode ini disimpan di <code>control.json</code> dan bisa lo baca di <code>core.main_loop</code>
+                        buat atur risk (lot size, SL/TP, dsb).
+                    </p>
+                    <ul class="bullet-list">
+                        <li><b>SAFE</b> – low risk, jarang entry.</li>
+                        <li><b>BALANCED</b> – default, cukup aktif.</li>
+                        <li><b>AGGRESSIVE</b> – entry lebih sering & lot lebih besar.</li>
+                        <li><b>SCALPING M5</b> – nanti kalau lo ganti TF & logic ke 5m.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-label">Risk Params (rencana)</div>
+                    <p class="muted">
+                        Bisa lo simpan di <code>history.json</code> atau file lain: risk_per_trade_pct, max_daily_drawdown_pct, dll,
+                        lalu ditampilkan di sini.
+                    </p>
+                    <div class="placeholder-box">
+                        TODO: tarik risk config dari core.config / file lain.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: NEWS / LOGS -->
+        <section class="view" id="view-logs">
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-label">Last Headlines</div>
+                    <div id="headline-list" class="headlines-box">
+                        {% if s.sentiment and s.sentiment.headlines %}
+                            {% for h in s.sentiment.headlines %}
+                                <div class="headline-item">• {{ h }}</div>
+                            {% endfor %}
+                        {% else %}
+                            <div class="headline-item muted">Tidak ada headline dibaca.</div>
+                        {% endif %}
+                    </div>
+                    <div class="muted">
+                        Source: RSS via <code>core.feeder.news_feeder</code>.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-label">Log Info</div>
+                    <div class="placeholder-box">
+                        Nanti bisa tambahin pembacaan log dari <code>data/logs/bot.log</code> dan tampilkan beberapa baris terakhir.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<script src="{{ url_for('dashboard.static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

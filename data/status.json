@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-12-04T14:40:20.016717Z",
+  "symbol": "XAUUSD",
+  "timeframe_minutes": 15,
+  "mode": "AGGRESSIVE",
+  "dry_run": true,
+  "technical": {
+    "direction": "buy",
+    "confidence": 0.5,
+    "buy_score": 2,
+    "sell_score": 0
+  },
+  "sentiment": {
+    "sentiment": "neutral",
+    "confidence": 0.4,
+    "reason": "ai_neutral",
+    "headlines": 6
+  },
+  "condition": {
+    "tradable": true,
+    "reason": "ok",
+    "info": {
+      "avg_range": 6.420599999999995,
+      "std_range": 3.0198434950661563,
+      "vol_ratio": 0.0015271326126511814
+    }
+  },
+  "decision": {
+    "action": "BUY",
+    "reason": "technical+sentiment_ok",
+    "size": 1.0
+  }
+}

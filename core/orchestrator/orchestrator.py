@@ -1,80 +1,71 @@
-from typing import Dict, Any
-
 from loguru import logger
-
+from core.utils.control_loader import load_control
 
 class Orchestrator:
-    """
-    Ngegabungin semua otak:
-    - technical_result
-    - sentiment_result
-    - condition_result
+    def __init__(self):
+        self.mode = "SAFE"
+        self.conf_threshold = 0.35
+        self.lot_size = 0.01
 
-    Output: sinyal final:
-    {
-      "action": "BUY" / "SELL" / "HOLD",
-      "reason": "....",
-      "sl_pips": float,
-      "tp_pips": float
-    }
-    """
+    def update_mode(self):
+        control = load_control()
+        self.mode = control["mode"].upper()
 
-    def decide(
-        self,
-        technical: Dict[str, Any],
-        sentiment: Dict[str, Any],
-        condition: Dict[str, Any],
-    ) -> Dict[str, Any]:
-        if not condition.get("tradable", False):
-            reason = f"market_not_tradable:{condition.get('reason')}"
-            logger.info("Orchestrator: HOLD karena {}", reason)
-            return {"action": "HOLD", "reason": reason, "sl_pips": 0.0, "tp_pips": 0.0}
+        if self.mode == "SAFE":
+            self.conf_threshold = 0.40
+            self.lot_size = 0.01
 
-        tech_dir = technical.get("direction", "neutral")
-        tech_conf = float(technical.get("confidence", 0.0))
-        sent = sentiment.get("sentiment", "neutral")
-        sent_conf = float(sentiment.get("confidence", 0.0))
+        elif self.mode == "BALANCED":
+            self.conf_threshold = 0.30
+            self.lot_size = 0.02
 
-        # basic logic:
-        # - butuh technical_conf minimal 0.4
-        # - kombinasikan dengan sentiment
+        elif self.mode == "AGGRESSIVE":
+            self.conf_threshold = 0.20
+            self.lot_size = 0.04
 
-        if tech_conf < 0.4:
-            logger.info("Orchestrator: HOLD karena technical confidence rendah ({})", tech_conf)
-            return {"action": "HOLD", "reason": "low_technical_confidence", "sl_pips": 0.0, "tp_pips": 0.0}
+        elif self.mode == "SCALPING_M5":
+            self.conf_threshold = 0.15
+            self.lot_size = 0.03
 
-        # mapping arah
-        if tech_dir == "bullish":
-            if sent == "bearish" and sent_conf >= 0.5:
-                logger.info("Orchestrator: HOLD, technical bullish tapi sentiment bearish kuat.")
-                return {"action": "HOLD", "reason": "conflict_tech_sentiment", "sl_pips": 0.0, "tp_pips": 0.0}
-            action = "BUY"
-        elif tech_dir == "bearish":
-            if sent == "bullish" and sent_conf >= 0.5:
-                logger.info("Orchestrator: HOLD, technical bearish tapi sentiment bullish kuat.")
-                return {"action": "HOLD", "reason": "conflict_tech_sentiment", "sl_pips": 0.0, "tp_pips": 0.0}
-            action = "SELL"
-        else:
-            logger.info("Orchestrator: HOLD, technical neutral.")
-            return {"action": "HOLD", "reason": "technical_neutral", "sl_pips": 0.0, "tp_pips": 0.0}
+        logger.info(f"MODE UPDATED: {self.mode}, threshold={self.conf_threshold}, lot={self.lot_size}")
 
-        # SL/TP pips sederhana
-        # nanti kita bisa bikin lebih pintar
-        sl_pips = 300.0  # misal 300 "point" (bisa disesuaikan dengan symbol)
-        tp_pips = 600.0
+    def decide(self, technical, sentiment, condition):
+        self.update_mode()  # refresh mode tiap loop
 
-        logger.info(
-            "Orchestrator: action={}, tech_dir={}, sent={}, tech_conf={}, sent_conf={}",
-            action,
-            tech_dir,
-            sent,
-            tech_conf,
-            sent_conf,
-        )
+        # trading disabled →
+        control = load_control()
+        if not control["trading_enabled"]:
+            return {
+                "action": "HOLD",
+                "reason": "disabled_from_dashboard",
+                "lot": 0
+            }
+
+        # check technical confidence
+        if technical["confidence"] < self.conf_threshold:
+            return {
+                "action": "HOLD",
+                "reason": "low_technical_confidence",
+                "lot": 0
+            }
+
+        # decide buy/sell
+        if technical["direction"] == "buy":
+            return {
+                "action": "BUY",
+                "reason": "technical_signal_buy",
+                "lot": self.lot_size
+            }
+
+        elif technical["direction"] == "sell":
+            return {
+                "action": "SELL",
+                "reason": "technical_signal_sell",
+                "lot": self.lot_size
+            }
 
         return {
-            "action": action,
-            "reason": f"tech_{tech_dir}_sent_{sent}",
-            "sl_pips": sl_pips,
-            "tp_pips": tp_pips,
+            "action": "HOLD",
+            "reason": "neutral_no_signal",
+            "lot": 0
         }

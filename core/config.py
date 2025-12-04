@@ -1,32 +1,43 @@
-import os
-from dotenv import load_dotenv
-
-# Load .env
-load_dotenv()
+from pydantic_settings import BaseSettings
+from pydantic import Field
 
 
-class Settings:
-    def __init__(self):
-        # --- API Keys ---
-        self.OPENAI_KEY = os.getenv("OPENAI_API_KEY", "")
-        self.GEMINI_KEY = os.getenv("GEMINI_API_KEY", "")
+class Settings(BaseSettings):
+    # === MT5 Config ===
+    MT5_PATH: str = Field(default=r"C:\Program Files\MetaTrader 5\terminal64.exe")
+    MT5_LOGIN: int = 5043244800
+    MT5_PASSWORD: str = "@Gempur123"
+    MT5_SERVER: str = "MetaQuotes-Demo"
 
-        # --- MT5 ---
-        self.MT5_PATH = os.getenv("MT5_PATH", r"C:\Program Files\MetaTrader 5\terminal64.exe")
-        self.MT5_LOGIN = int(os.getenv("MT5_LOGIN", "0"))
-        self.MT5_PASSWORD = os.getenv("MT5_PASSWORD", "")
-        self.MT5_SERVER = os.getenv("MT5_SERVER", "MetaQuotes-Demo")
+    # === Trading Config ===
+    SYMBOL: str = "XAUUSD"
+    TIMEFRAME_MINUTES: int = 15
+    DRY_RUN: bool = True
 
-        # --- Trading Config ---
-        self.SYMBOL = os.getenv("SYMBOL", "XAUUSD")
-        self.TIMEFRAME = os.getenv("TIMEFRAME", "15m")
-        self.DRY_RUN = os.getenv("DRY_RUN", "true").lower() == "true"
+    # Mode trading: SAFE / BALANCED / AGGRESSIVE / SCALPING_M5
+    TRADING_MODE: str = "SAFE"
 
-        # --- Sentiment ---
-        self.SENTIMENT_MAX_AGE = int(os.getenv("SENTIMENT_MAX_AGE", "90"))
+    # Minimal confidence buat entry
+    TECH_CONF_THRESHOLD: float = 0.20  
 
-        # --- Logging ---
-        self.LOG_PATH = "data/logs/bot.log"
+    # News sentiment ON/OFF
+    USE_SENTIMENT: bool = True
+
+    # API Keys
+    GEMINI_API_KEY: str = ""
+    OPENAI_API_KEY: str = ""
+
+    # === Risk Management (dari config lama, tetap kita support) ===
+    risk_per_trade_pct: float = 1.0
+    max_daily_drawdown_pct: float = 3.0
+    max_open_trades: int = 3
+    loop_sleep_seconds: int = 60
+    min_bars_required: int = 200
+
+    class Config:
+        env_file = ".env"
+        env_file_encoding = "utf-8"
+        extra = "allow"  # biar aman kalau ada variable tambahan
 
 
 settings = Settings()
