@@ -1,3 +1,94 @@
+
+██████╗ ██╗ █████╗     ████████╗██████╗ ███████╗██████╗ ██╗███╗   ██╗ ██████╗ 
+██╔══██╗██║██╔══██╗    ╚══██╔══╝██╔══██╗██╔════╝██╔══██╗██║████╗  ██║██╔════╝ 
+██║  ██║██║███████║       ██║   ██████╔╝█████╗  ██████╔╝██║██╔██╗ ██║██║  ███╗
+██║  ██║██║██╔══██║       ██║   ██╔══██╗██╔══╝  ██╔══██╗██║██║╚██╗██║██║   ██║
+██████╔╝██║██║  ██║       ██║   ██║  ██║███████╗██║  ██║██║██║ ╚████║╚██████╔╝
+╚═════╝ ╚═╝╚═╝  ╚═╝       ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+
+# 🤖 AI Trading Bot — MT5 + Machine Learning + Realtime Dashboard
+
+Sistem trading otomatis berbasis **AI + Technical Analysis + Sentiment Model**  
+yang terhubung langsung ke **MetaTrader 5 (MT5)** dan memiliki **Dashboard Realtime Modern**.
+
+Sistem ini dibangun untuk:
+- Auto-Trading XAUUSD atau pair apapun
+- Realtime Monitoring via Web Dashboard
+- Mode Trading (SAFE/BALANCED/AGGRESSIVE)
+- Integrasi LLM (Gemini / OpenAI) untuk Analisa Sentimen
+- Risk Management otomatis
+
+> ⚡ Dibangun full Python.  
+> ⚡ Dashboard UI mirip Binance / TradingView.  
+> ⚡ Bot bisa ON/OFF langsung dari dashboard.
+
+---
+
+# 🧠 **Fitur Utama**
+
+## ✅ 1. Auto-Trading MT5 (Full Live Mode)
+- Bot login ke MT5 pakai API resmi
+- Mengambil candlestick realtime
+- Eksekusi BUY/SELL otomatis
+- STOP LOSS & TAKE PROFIT otomatis (risk %)
+- Auto-close trade jika melawan trend
+
+## ✅ 2. Multi-Brain System
+Bot ini memakai 3 “otak”:
+
+### 🧪 **Technical Brain**
+Menggunakan indikator:
+- EMA Cross
+- RSI
+- MACD
+- Stochastic
+- ATR Volatility Filter
+
+### 📰 **Sentiment Brain**
+Menggunakan:
+- Google Gemini API  
+atau  
+- OpenAI (opsional)
+
+Mengambil berita ekonomi dan menganalisa:
+- Bullish / Bearish / Neutral
+- Confidence score 0.00 – 1.00
+
+### 🧩 **Decision Engine**
+Menggabungkan Tech + Sentiment → Action final:
+- BUY
+- SELL
+- HOLD
+
+---
+
+# 📡 **Realtime Dashboard (Flask)**
+
+Dashboard modern dengan tampilan premium:
+
+### Panel Utama:
+- 📊 Overview (Mode, Last Decision, Technical, Sentiment)
+- 📈 Live Chart (via TradingView embed)
+- 🔔 Signal History
+- 📑 Open Trades Realtime
+- 🛡 Risk Management Panel
+- 📰 Log Viewer (system logs)
+- 🟢 Bot Online Status
+
+### Kontrol Bot:
+- 🔘 ON/OFF Trading Bot
+- 🎛 Ganti Mode:
+  - SAFE  
+  - BALANCED  
+  - AGGRESSIVE  
+  - SCALPING M5
+- 🔄 Update status otomatis setiap 2 detik
+
+---
+
+
+
+
 # 🤖 AI Trading Bot — XAUUSD Automated Intelligence
 
 Bot trading otomatis untuk XAUUSD yang menggabungkan analisa teknikal, sentimen, dan eksekusi trading real-time.  
